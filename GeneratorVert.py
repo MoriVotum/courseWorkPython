@@ -4,7 +4,6 @@ class Point:
         self.y = y
         self.z = z
 
-
 class GeneratorVert:
     def __init__(self, l, h, d, lc, rc):
         self.points = []

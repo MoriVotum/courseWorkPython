@@ -165,5 +165,5 @@ boundary
 """
 
         # export to file
-        with open("calculate/system/blockMeshDict", "w") as file:
+        with open("system/blockMeshDict", "w") as file:
             file.write(export)

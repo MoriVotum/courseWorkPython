@@ -25,7 +25,7 @@ boundaryField
 inlet
 {
     type            fixedValue;
-    value           uniform (""" f"{speed}" """0 0);
+    value           uniform (""" f"{speed}" """ 0 0);
 }
 outlet
 {
@@ -61,5 +61,5 @@ frontAndBack
 // ************************************************************************* //
 """
 
-        with open("calculate/0/U", "w") as file:
+        with open("0/U", "w") as file:
             file.write(export)
