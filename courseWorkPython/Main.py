@@ -1,5 +1,4 @@
-from interface import Ui_MainWindow
-
+from Interface import Ui_MainWindow
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
 

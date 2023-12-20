@@ -6,7 +6,6 @@ from GeneratorBMD import GeneratorBMD
 from GeneratorU import GeneratorU
 from GeneratorVert import GeneratorVert
 
-
 def recursive_delete(folder):
     if os.path.exists(folder):
         for root, dirs, files in os.walk(folder):
@@ -35,6 +34,7 @@ def run_shell():
             print(f"Ошибка при выполнении скрипта: {e}")
     else:
         print("Файл Run.sh не найден в текущем каталоге.")
+
 
 
 def generator():
