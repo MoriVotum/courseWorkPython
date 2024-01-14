@@ -1,6 +1,5 @@
 class GeneratorBMD:
     def export_block_mesh_dict(self, points, edges):
-        # write to file
         export = """/*--------------------------------*- C++ -*----------------------------------*\\
   =========                 |
   \\\\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox

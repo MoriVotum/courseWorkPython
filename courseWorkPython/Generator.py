@@ -17,17 +17,12 @@ def recursive_delete(folder):
 
 
 def run_shell():
-    # Получаем текущий каталог
     current_directory = os.getcwd()
-    #current_directory = os.getcwd()
-    # Формируем путь к bash-скрипту
     print(current_directory)
     bash_script_path = os.path.join(current_directory, "Run.sh")
     print(bash_script_path)
 
-    # Проверяем, существует ли файл Run.sh
     if os.path.isfile(bash_script_path):
-    # Выполняем bash-скрипт
         try:
             subprocess.run(["bash", bash_script_path], check=True)
         except subprocess.CalledProcessError as e:
@@ -37,9 +32,9 @@ def run_shell():
 
 
 
-def generator():
+def generator(l, h, d, lc, rc):
     generatorBMD = GeneratorBMD()
-    generatorVert = GeneratorVert(180, 23, 12, 30, 8)
+    generatorVert = GeneratorVert(l, h, d, lc, rc)
     generatorVert.generator_vertices()
     generatorVert.generator_edges()
     generatorBMD.export_block_mesh_dict(generatorVert.points_to_string(), generatorVert.edges_to_string())
@@ -57,4 +52,5 @@ def generator():
 
     print("Complete rm")
 
-    #run_shell()
+    run_shell()
+    
