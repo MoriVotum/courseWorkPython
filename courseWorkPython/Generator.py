@@ -39,7 +39,7 @@ def generator(l, h, d, lc, rc):
     generatorVert.generator_edges()
     generatorBMD.export_block_mesh_dict(generatorVert.points_to_string(), generatorVert.edges_to_string())
     generatorU = GeneratorU()
-    generatorU.export_u(0.41246)
+    generatorU.export_u(0.4)
 
     for i in range(11):
         for j in range(11):

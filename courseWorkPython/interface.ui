@@ -50,11 +50,17 @@
     <property name="text">
      <string/>
     </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
     <property name="pixmap">
-     <pixmap>content/picture.jpg</pixmap>
+     <pixmap>content/schema.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="but_schema">
@@ -91,7 +97,7 @@
       <x>760</x>
       <y>10</y>
       <width>201</width>
-      <height>541</height>
+      <height>579</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -270,6 +276,9 @@
             <set>Qt::AlignCenter</set>
            </property>
           </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout"/>
          </item>
          <item>
           <widget class="QTextEdit" name="te_rc">

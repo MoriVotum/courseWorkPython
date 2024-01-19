@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="schema">
     <file>picture.jpg</file>
+    <file>schema.png</file>
   </qresource>
 </RCC>
